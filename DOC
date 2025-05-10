@@ -1,0 +1,64 @@
+TYPEAS OF error
+
+1)Syntax Error= face by programmer/compiler fined this error
+
+2)Logical Error= face by programmer/we remove the logical error
+by using 2 method TRACING / DEBUGGER ex(-b/2*a)wrong  (-b(2*a))right
+
+3)Runtime Error(exception)= face by user/ we handle this types of error by exception handling
+IT oucert when lack of resource and bad input provide the user
+program crash or program stop
+
+***********************************************************************
+
+try {} catch {} block is two types 1)one try block and multiple catch block
+2)one try block content another try catch block or one catch block contant anather try catch
+block(like nested)
+
+** multiple catch block or nested try catch block
+
+____java have some build in exception______
+     object // is the mother of all java classes
+       |
+       |
+    Throwable // throwable have two sub classes 1)exception 2)error
+  ________________________ 1) Error
+  |
+  |
+2) Exception ----> this is super class name // this is the mother or parent class of  all exception
+    | ->Clssnotfoundexception   ---> sub clss  |
+    | ->IOException                 ----> sub   | * checked exception= ate those that can not be ignore
+    | ->NUmberformatexception     ----> sub     | must handele in tray and catch
+    | ->RUNtimeEXception       ----> sub        | cnnot except  ** java compiler foces to used try and catch block
+          |-->ArithmeticException            |
+          |-->IndexOutofBoundException       | * uncheck exception = is a types of exception for that
+          |                                  |you have option either handle it or ignore it
+          |-->NullPointerException           | you cna handle them or not handele this is your choice
+
+
+
+class Exception have some method
+ string getMassage()
+ call s.o.p (e.getMassage());
+ this method return a massage about ethe exception
+
+ string toString();
+ clas s.o.p (e); autometicaly class to string method
+
+ void printStackTrace()
+
+
+****** how to difiend exception *******
+
+ class minbalance extend Exception
+ // every user defined exception must be extend Exception class
+ {
+ in hear i can over ride this method
+   string toString();
+       or
+   string getMassage()
+   public string getMassage()
+   {
+        return ; massage
+   }
+ }
